@@ -20,7 +20,7 @@ export class ClassClick extends Component {
     render() {
         return (
             <div>{this.state.message}
-                   <button onClick={this.ClickHandle.bind(this)}>Worship the God! from classClick Component</button>
+                   <button onClick={this.ClickHandler.bind(this)}>Worship the God! from classClick Component</button>
             </div>
         )
     }

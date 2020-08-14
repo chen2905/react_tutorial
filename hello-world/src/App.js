@@ -8,6 +8,14 @@ import Message from './components/Message'
 import Counter from './components/Counter'
 import FuncitonClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
+import StyleSheet from './components/StyleSheet'
+import Inline from './components/Inline'
+import FormComponent from './components/Form'
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +24,8 @@ function App() {
       {/* <Welcome name="God"heroname="John"><button>Worship God!</button></Welcome> */}
       {/* <FuncitonClick/> */}
 
-      <ClassClick/>
+      {/* <ClassClick/> */}
+      <FormComponent/>
     </div>
   );
 }
