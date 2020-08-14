@@ -15,6 +15,7 @@ import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
 import Inline from './components/Inline'
 import FormComponent from './components/Form'
+import LifeCycle from './components/LifeCycleA'
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       {/* <FuncitonClick/> */}
 
       {/* <ClassClick/> */}
-      <FormComponent/>
+      <LifeCycle/>
     </div>
   );
 }
