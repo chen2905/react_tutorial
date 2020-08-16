@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegComp from './26RegularComponent'
 import PureComp from './26PureComponent'
+import MemoComp from './27MemoComponent'
 import uuid from 'react-uuid'
  class ParentComponent extends Component {
 
@@ -14,7 +15,8 @@ import uuid from 'react-uuid'
     componentDidMount(){
         setInterval(()=>{
            this.setState({
-            name:`Great God${uuid()}`
+            //name:`Great God${uuid()}`
+            name:`Great God`
            })
         },2000)
     }
@@ -23,8 +25,9 @@ import uuid from 'react-uuid'
         return (
             <div>
                 This God's parent's component
-            <RegComp name={this.state.name}/>
-            <PureComp name={this.state.name}/>
+            {/* <RegComp name={this.state.name}/>
+            <PureComp name={this.state.name}/> */}
+            <MemoComp name={this.state.name}/>
             </div>
         )
     }

@@ -15,20 +15,24 @@ import './App.css';
 // import StyleSheet from './components/StyleSheet'
 // import Inline from './components/Inline'
 // import FormComponent from './components/Form'
-import ComponentUpdatingLifecycle from './components/24componentUpdatingLifecycle'
-import FragmentDemo from './components/25Fragment'
-import Table from './components/25Table'
-import ParentComp from './components/26ParentComponent'
+// import ComponentUpdatingLifecycle from './components/24componentUpdatingLifecycle'
+// import FragmentDemo from './components/25Fragment'
+// import Table from './components/25Table'
+// import ParentComp from './components/26ParentComponent'
+// import ForwardParentInput from './components/30ForwardParentInput'
+// import Portal from './components/31Portal'
+import Hero from './components/32ErrorBoundary'
+import ErrorBoundary from './components/32ErrorBoundaryComp'
 function App() {
   return (
     <div className="App">
-      {/* <Greet name="God"heroname="John"><button>Worship God!</button></Greet> */}
-
-      {/* <Welcome name="God"heroname="John"><button>Worship God!</button></Welcome> */}
-      {/* <FuncitonClick/> */}
-
-      {/* <ClassClick/> */}
-      <ParentComp/>
+      <ErrorBoundary>
+     <Hero heroName='Jesus'/>
+     </ErrorBoundary>
+     <ErrorBoundary>
+     <Hero heroName='Joda'/>
+     </ErrorBoundary>
+   
     </div>
   );
 }
