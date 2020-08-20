@@ -8,10 +8,24 @@ import ClassCounter from './components/44classCounter'
 //import HookCounter4 from './components/5HookCounter4'
 import HookEffectOnce from './components/8UseEffectHook'
 import UseEffectContainer from './components/10useEffectContainer'
+import HookCounter5 from './components/11HookCounter5'
+import UseEffectFetchSingleData from './components/13UseEffectFetchSingleData'
+import ComponentC from './components/ComponentC'
+
+export const NameContext = React.createContext()
+export const ActionContext = React.createContext()
 function App() {
+
+
   return (
     <div className="App">
-      <UseEffectContainer/>
+
+      <NameContext.Provider value='God'>
+        <ActionContext.Provider value='bless us please!'>
+          <ComponentC />
+        </ActionContext.Provider>
+      </NameContext.Provider>
+
     </div>
   );
 }
