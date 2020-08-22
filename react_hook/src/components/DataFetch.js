@@ -6,7 +6,7 @@ function DataFetch() {
     const [post, setPost] =useState ({})
     const loaddata=()=>{
         axios
-        .get('https://jsonplaceholder.typicode.com/posts/29')
+        .get('https://jsonplaceholder.typicode.com/posts/29s')
         .then(
             res=>{
                 setLoading(false)
@@ -16,14 +16,14 @@ function DataFetch() {
         )
         .catch(
             ()=>{
-                setLoading(true)
+                setLoading(false)
                 setError('something is wrong')
                 setPost({})
             }
         )
     }
     useEffect(()=>{
-
+        console.log("you should see this message once only")
         setInterval(loaddata, 2000)
     
      }  
