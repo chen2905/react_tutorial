@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 //import DataFetchUseReducer from './components/DataFetchUseReducer'
-import ParentComp from './CompHooks/ParentComp'
+import InputUseCusHook from './CompHooks/InputUseCusHook'
 function App() {
  
   return (
     <div className="App">
-     <ParentComp/>
+    <InputUseCusHook/>
     </div>
   );
 }
