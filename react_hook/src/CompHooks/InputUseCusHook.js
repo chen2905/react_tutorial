@@ -2,8 +2,8 @@ import React from 'react'
 import useInput from '../CustomHooks/useInput'
 function InputUseCusHook() {
 
-    const [firstName, resetFirstname, bindFirstName] = useInput('')
-    const [lastName, resetLastname, bindLastName] = useInput('')
+    const [firstName, resetFirstname, bindingFirstName] = useInput('')
+    const [lastName, resetLastname,bindingLastName] = useInput('')
 
     const submitHandler =(e)=>{
         e.preventDefault()
@@ -16,11 +16,11 @@ function InputUseCusHook() {
             <form onSubmit={submitHandler}>
                 <label>First Name</label>
                 <input 
-                {...bindFirstName} 
+                {...bindingFirstName} 
                 type='text' />
                 <label>Last Name</label>
                 <input 
-                {...bindLastName} 
+                {...bindingLastName} 
                 type='text' />
                <button>submit</button>
             </form>
