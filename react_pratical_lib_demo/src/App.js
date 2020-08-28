@@ -6,20 +6,21 @@ import Modal from './components/ModalReact'
 //TOAST NOTIFY
 import ToolTip from './components/ToolTip';
 import Countup from './components/Countup';
+import IdleTimerContainer from './components/IdleTimerContainer';
 
 function App() {
   return (
 
     <React.Fragment>
-      <div className="app">  
+      <div className="AppLift">
         <Icon />
-
         <Modal />
-        
         <ToolTip />
-       
-       <Countup/>
-        </div>
+      </div>
+      <div className="AppLift">
+        <Countup />
+        <IdleTimerContainer/>
+      </div>
     </React.Fragment>
   );
 }
