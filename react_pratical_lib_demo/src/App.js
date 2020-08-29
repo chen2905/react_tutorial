@@ -7,6 +7,8 @@ import Modal from './components/ModalReact'
 import ToolTip from './components/ToolTip';
 import Countup from './components/Countup';
 import IdleTimerContainer from './components/IdleTimerContainer';
+import ColorPicker from './components/ColorPicker';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -20,6 +22,11 @@ function App() {
       <div className="AppLift">
         <Countup />
         <IdleTimerContainer/>
+        
+      </div>
+      <div className="AppLift">
+     <ColorPicker/>
+     <CreditCard/>
       </div>
     </React.Fragment>
   );
