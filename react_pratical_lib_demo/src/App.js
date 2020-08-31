@@ -12,6 +12,8 @@ import CreditCard from './components/CreditCard';
 import DatePicker from './components/DatePicker';
 import VideoPlayer from './components/VideoPlayer';
 import Loader from './components/Loader';
+import { Line } from 'react-chartjs-2';
+import LineChart from './components/LineChart';
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
       <div className="AppLift">
       <VideoPlayer />
       <Loader/>
+      <LineChart/>
         </div>
     </React.Fragment>
   );
